@@ -1,0 +1,140 @@
+body {
+    background: linear-gradient(rgba(135, 67, 86, 0.6), rgb(135, 67, 86)), url('/my-portfolio/images/main-bg.jpeg') no-repeat center center fixed;
+    /* background-size: cover; */
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+#about-me-section {
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-img {
+    width: 300px;
+
+}
+
+.description {
+    background-color: #F6E7D8;
+    width: 300px;
+    color: #874356;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.about-me{
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2 {
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.links {
+    background-color: #C65D7B;
+    width: 300px;
+
+}
+
+.links-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.icons {
+    margin-right: 10px;
+}
+
+.details {
+    margin-top: 10px;
+}
+
+.email {
+    font-weight: bold;
+}
+/*about me section */
+#about-me{
+    background-color: #570530;
+    color: beige;
+    text-align: center;
+    padding: 50px;
+}
+.about-me-paragraph{
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+/*works styles*/
+#my-works-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 100px; */
+    background-color: #F6E7D8;
+    color: #874356;
+}
+h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.works-img {
+    max-width: 300px;
+}
+.codes{
+    display: flex;
+    justify-content: space-around;
+    /* background-color: #C65D7B; */
+    background-color: rgba(28, 30, 31, 0.9);
+    padding: 10px;
+}
+.codes-a{
+   text-transform: uppercase;
+   color: beige;
+}
+.works-examples>div{
+    margin-bottom: 30px;
+}
+@media(min-width: 768px){
+    body {
+        background: linear-gradient(rgba(135, 67, 86, 0.6), rgb(135, 67, 86)), url('/my-portfolio/images/main-bg.jpeg') no-repeat center center fixed;
+        background-size: cover;
+        width: 100%;
+    }
+    .container{
+        flex-direction: row;
+        height: 500px;
+    }
+    .main-img{
+        width: 400px;
+    }
+    .description, .links{
+        width: 400px;  
+    }
+    .description{
+        height: 157px;
+    }
+    /*my works*/
+    .works-examples{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px;
+    }
+}
