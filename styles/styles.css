@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(rgba(135, 67, 86, 0.6), rgb(135, 67, 86)), url('/my-portfolio/images/main-bg.jpeg') no-repeat center center fixed;
+    background: linear-gradient(rgba(135, 67, 86, 0.6), rgb(135, 67, 86)), url('../images/main-bg.jpeg') no-repeat center center fixed;
     /* background-size: cover; */
     width: 100%;
 }
@@ -75,10 +75,35 @@ h2 {
     color: beige;
     text-align: center;
     padding: 50px;
+    position: relative;
+}
+#about-me::after{
+    content: " ";
+    position: absolute;
+    background-color: beige;
+    height: 3px;
+    width: 300px;
+    bottom: 20px;
+    left: calc(50% - 150px);
 }
 .about-me-paragraph{
     line-height: 1.5;
     letter-spacing: 1px;
+}
+/*skills styles*/
+#skills{
+    background-color: #570530;
+    text-align: center;
+    margin-top: 0;
+    padding-bottom: 50px;
+}
+.skills-header{
+    color: beige;
+}
+.skills-icons{
+    width: 96px;
+    height: 96px;
+    padding: 20px;
 }
 /*works styles*/
 #my-works-section {
@@ -91,7 +116,7 @@ h2 {
     color: #874356;
 }
 h3{
-    margin-top: 20px;
+    padding-top: 20px;
     margin-bottom: 20px;
     font-size: 30px;
 }
@@ -104,17 +129,22 @@ h3{
     /* background-color: #C65D7B; */
     background-color: rgba(28, 30, 31, 0.9);
     padding: 10px;
+    transition: all 2s ease-in-out;
 }
 .codes-a{
    text-transform: uppercase;
    color: beige;
 }
+.codes-paragraph:hover{
+    transform: scale(1.1);
+}
+
 .works-examples>div{
     margin-bottom: 30px;
 }
 @media(min-width: 768px){
     body {
-        background: linear-gradient(rgba(135, 67, 86, 0.6), rgb(135, 67, 86)), url('/my-portfolio/images/main-bg.jpeg') no-repeat center center fixed;
+        background: linear-gradient(rgba(135, 67, 86, 0.6), rgb(135, 67, 86)), url('../images/main-bg.jpeg') no-repeat center center fixed;
         background-size: cover;
         width: 100%;
     }
