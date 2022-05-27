@@ -1,6 +1,6 @@
 body {
     background: linear-gradient(rgba(135, 67, 86, 0.6), rgb(135, 67, 86)), url('../images/main-bg.jpeg') no-repeat center center fixed;
-    /* background-size: cover; */
+    background-size: cover;
     width: 100%;
 }
 
