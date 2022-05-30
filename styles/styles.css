@@ -121,7 +121,9 @@ h3{
     font-size: 30px;
 }
 .works-img {
-    max-width: 300px;
+    width: 300px;
+    height: 171px;
+    object-fit: cover;
 }
 .codes{
     display: flex;
